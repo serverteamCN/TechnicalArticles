@@ -4,8 +4,6 @@ date: 2017-1-16
 
 ![](http://i.imgur.com/a4qUJKL.jpg)
 
-![](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/p1.png)
-
 # GeoAnalytics矢量大数据应用模板 #
 ## 案例一：结合GeoEvent实时数据源与Python API生成追踪线 ##
  
