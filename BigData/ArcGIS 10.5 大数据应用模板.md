@@ -1,8 +1,8 @@
----
-title: ArcGIS 10.5 大数据应用模板
-date: 2016-10-31 10:47:01
+
+# ArcGIS 10.5 大数据应用模板 #
 author: 刘峥 
----
+date: 2017-1-16
+
 ![](http://i.imgur.com/a4qUJKL.jpg)
 # GeoAnalytics矢量大数据应用模板 #
 ## 案例一：结合GeoEvent实时数据源与Python API生成追踪线 ##
