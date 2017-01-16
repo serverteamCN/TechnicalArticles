@@ -1,6 +1,6 @@
 
 # ArcGIS 10.5 大数据应用模板 #
-author: 刘峥 
+author: 刘峥，勾戈雪黎
 date: 2017-1-16
 
 ![](http://i.imgur.com/a4qUJKL.jpg)
