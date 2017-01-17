@@ -22,7 +22,7 @@
 3. iOS 10 SDK（或更高）
 
 ##工程下载地址：
-[ArcGISRuntimeForIOSV100.0Demos](https://github.com/serverteamCN/IOS.git)
+[ArcGISRuntimeForIOSV100.0Demos](https://github.com/makeling/CustomTianDiTuLayerV100.0-ObjC.git)
 
 
 
