@@ -1,5 +1,4 @@
-# CustomTianDiTuLayerV100.0-ObjC
-
+# CustomTianDiTuLayerV100.0-ObjC样例工程
 ##概览
 
 这个示例是为了解决如何基于ArcGIS Runtime SDK for iOS 100.0，通过客户化图层访问天地图WMTS服务。这是一个完整独立的工程，基于Xcode8.2版本开发，支持iOS9以上的系统部署。
