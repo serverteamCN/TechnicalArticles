@@ -12,6 +12,11 @@ Esri关键产品发布时间：
 - 2004年发布 ArcGIS 9系列的软件，提供完整的从桌面端到服务器端的GIS软件产品
 - 2010年发布 ArcGIS 10系列的产品，这是全球首款支持云架构的GIS平台 
 
+借用Esri官方的产品发展演进图：
+
+
+![ArcGIS发展史](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/ArcGIS发展史01_20170123.jpg)  
+
 看了上面的发展历程，喜爱ArcGIS的GISer们，有没有点儿小激动？Esri虽然是一家世界上体量不算太大的软件公司，但是在GIS界，绝对是当之无愧的NO1，Jack作为Esri的精神领袖，一直以通过GIS帮助我们创造更美好的世界为理念，鼓舞了一代又一代的GIS前辈投入其中。    
 
 从82年发布第一个产品ARC/INFO1.0,世界上现代意义的GIS软件终于诞生了。80年代的产品体现了两大特点：一是从无到有的飞跃，一是基于命令行实现计算机制图。这与当时计算机应用环境相匹配，软件基本需要通过命令行执行，内存硬盘贵比黄金。    
