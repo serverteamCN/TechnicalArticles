@@ -141,7 +141,7 @@ https://dev.twitter.com/streaming/public
 ----------
 
  
-*## 附录： python API 调用工具代码##*
+*## 附录： python API 调用工具的代码##*
     <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
 <html>
 <body>
