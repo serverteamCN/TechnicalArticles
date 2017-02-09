@@ -1,11 +1,13 @@
 #ArcGIS Runtime 100 许可策略解读
 
 ###概览
+
 ArcGIS Runtime SDK 100 的许可政策，从大方向上依然延续了之前版本的策略。面向开发者支持ArcGIS Runtime SDK的在线下载，并且支持开发模式下的全功能开放。在开发模式下地图或场景依然会打上Esri的水印，在调试消息中会添加仅用于开发使用的声明。SDK的下载和free级别许可的生成需要注册开发者账户，面对中国区开发者账户暂未开放的情况，我们可以通过注册ArcGIS Online试用账户来替代，效果是一样一样的。
 
 在开发结束后，应用要以产品的形式对外发布，这时我们就要关心如何激活Runtime许可，去除水印并获得正版授权。在ArcGIS Runtime SDK 100中，许可级别相较于之前的版本有所调整，Esri提供了四种级别的授权：Lite, Base, Standard和Advanced。
 
 ###许可激活模式
+
 针对这四种级别的许可，Esri提供了两种激活许可的方式：license key 和Named User。
 
 * license key是文本字符串，将其添加到Runtime 应用中即可激活许可。这个key对于Lite级别可以通过online账户免费获得，对于更高级别，则需要以ArcGIS Runtime许可包的方式从官方购买。这种方式适合由于网络或安全原因，应用无法连接网络，同时应用本身也不需要访问任何在线服务的场景。
@@ -13,15 +15,18 @@ ArcGIS Runtime SDK 100 的许可政策，从大方向上依然延续了之前版
 * Named User获取授权，熟悉Esri产品的GISer应该知道Portal for ArcGIS 和ArcGIS Online的授权模式是基于Named User的（ArcGIS组织账户）。为Runtime应用授权是Named User的重要特性之一。授权的过程需要在应用中通过代码登录Online或Portal，然后返回与Named User账户相关的许可信息。使用Named User申请的许可有效期是30天，过期后只需要再次连接Online 或Portal重新申请授权即可。这个许可支持保存到本地用于离线使用，但是牢记30天的有效期，别忘了定期更新许可。这种模式的好处是同一个Named User并不限定授权一个应用，而是可以同时授权很多ArcGIS Runtime apps。
 
 ###许可级别对比分析
+
 下面的表格对比了四种许可级别、对应的功能以及两种授权模式之间的对应关系。 
 
 ![许可级别对比](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/ArcGIS Runtime 100 许可策略解读01.png)  
 
 ####_注意_：
+
 * 从ArcGIS 10.5开始，ArcGIS Online或者Portal for ArcGIS的成员有两种许可级别供选择。Level1 可以被用来授权Runtime Lite级别的许可，Level2可以被用来授权Lite和Basic级别的许可。对于10.5之前的portal，所有的Named User等效于Level2,可以被用于激活Runime Lite和Basic级别的许可。
 * ArcGIS Runtime Local Server仅可以用于面向桌面的ArcGIS Runtime SDKs: Runtime SDK for .NET(WPF), Runtime SDK for Java,Runtime SDK for Qt。
 
 ###扩展
+
 ArcGIS Runtime提供了下列可选扩展，以支持其它的功能，分析工具和数据：
 
 ArcGIS Runtime Local Server 的 GP Services
@@ -31,11 +36,14 @@ ArcGIS Runtime Local Server 的 GP Services
 - Spatial Analyst
 - 3D Analyst
 
-###激活许可向导
+###激活许可向导  
+
 在完成应用开发和测试后，可以通过以下向导完成许可的激活，以消除底图水印并获得正版官方授权。
 
 ####License key模式激活许可
+
 #####通过ArcGIS Online申请免费许可
+
 1、注册ArcGIS Online试用账号或者Esri开发者账号（中国区暂不支持）  
 
 打开浏览器，访问www.arcgis.com网站，点击Try ArcGIS按钮，按照页面向导，注册用户。
