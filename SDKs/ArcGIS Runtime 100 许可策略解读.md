@@ -13,7 +13,7 @@ ArcGIS Runtime SDK 100 的许可政策，从大方向上依然延续了之前版
 * Named User获取授权，熟悉Esri产品的GISer应该知道Portal for ArcGIS 和ArcGIS Online的授权模式是基于Named User的（ArcGIS组织账户）。为Runtime应用授权是Named User的重要特性之一。授权的过程需要在应用中通过代码登录Online或Portal，然后返回与Named User账户相关的许可信息。使用Named User申请的许可有效期是30天，过期后只需要再次连接Online 或Portal重新申请授权即可。这个许可支持保存到本地用于离线使用，但是牢记30天的有效期，别忘了定期更新许可。这种模式的好处是同一个Named User并不限定授权一个应用，而是可以同时授权很多ArcGIS Runtime apps。
 
 ###许可级别对比分析
-下面的表格对比了四种许可级别、对应的功能以及两种授权模式之间的对应关系。
+下面的表格对比了四种许可级别、对应的功能以及两种授权模式之间的对应关系。 
 
 |License级别  |功能 |License key|Named user|  
 |---|---|---|--|  
@@ -43,12 +43,12 @@ ArcGIS Runtime Local Server 的 GP Services
 #####通过ArcGIS Online申请免费许可
 1、注册ArcGIS Online试用账号或者Esri开发者账号（中国区暂不支持）
 打开浏览器，访问www.arcgis.com网站，点击Try ArcGIS按钮，按照页面向导，注册用户。
-插入图片1
+![注册Online账户](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/ArcGIS Runtime 100 许可策略解读02.png)  
 
 2，访问ArcGIS Runtime/Licensing页面，以前一步注册的试用账户登录网站
 打开浏览器，访问https://developers.arcgis.com/arcgis-runtime/licensing/，点击右上角的Sign In登录。  
 登录成功后，点击Show my ArcGIS Runtime Lite license key按钮，即可获得免费的Lite级别的许可。
-插入图片2
+![获取License key](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/ArcGIS Runtime 100 许可策略解读03.png.jpg)  
 许可格式规则：
 runtimelite,1000,rud****,none***********
 
