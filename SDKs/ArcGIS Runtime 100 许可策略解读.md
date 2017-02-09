@@ -15,12 +15,12 @@ ArcGIS Runtime SDK 100 的许可政策，从大方向上依然延续了之前版
 ###许可级别对比分析
 下面的表格对比了四种许可级别、对应的功能以及两种授权模式之间的对应关系。
 
-|License级别  |功能 |License key|Named user|
-|---|---|---|--|
-|Lite |-浏览地图，场景，图层以及来自ArcGIS的包<br> -简单路网分析 <br> -位置查找|免费可用。在开发者网站生成Licence key，<br>并用其在应用中激活许可|在应用中以Online或Portal的<br>Level1或Level2级别的Named User登陆，并激活许可|
-|Base|-Lite的全部功能<br> -简单要素编辑<br> -portal内容的增，删，改，查<br> -使用ArcGIS Online的分析服务|联系Esri官方，购买部署包|在应用中以Online或Portal的<br>Level2级别的Named User登陆，并激活许可|
-|Standard|-Basic的全部功能<br> -访问本地栅格及本地栅格高程数据源<br>-ArcGIS Runtime Local Server 标准版功能|联系Esri官方，购买部署包|暂不可用|
-|Advanced|-Standard的全部功能<br> -ArcGIS Runtime Local Server高级版功能|联系Esri官方，购买部署包|暂不可用|
+|License级别  |功能 |License key|Named user|  
+|---|---|---|--|  
+|Lite |-浏览地图，场景，图层以及来自ArcGIS的包<br> -简单路网分析 <br> -位置查找|免费可用。在开发者网站生成Licence key，<br>并用其在应用中激活许可|在应用中以Online或Portal的<br>Level1或Level2级别的Named User登陆，并激活许可|  
+|Base|-Lite的全部功能<br> -简单要素编辑<br> -portal内容的增，删，改，查<br> -使用ArcGIS Online的分析服务|联系Esri官方，购买部署包|在应用中以Online或Portal的<br>Level2级别的Named User登陆，并激活许可|  
+|Standard|-Basic的全部功能<br> -访问本地栅格及本地栅格高程数据源<br>-ArcGIS Runtime Local Server 标准版功能|联系Esri官方，购买部署包|暂不可用|  
+|Advanced|-Standard的全部功能<br> -ArcGIS Runtime Local Server高级版功能|联系Esri官方，购买部署包|暂不可用|  
 
 ####_注意_：
 * 从ArcGIS 10.5开始，ArcGIS Online或者Portal for ArcGIS的成员有两种许可级别供选择。Level1 可以被用来授权Runtime Lite级别的许可，Level2可以被用来授权Lite和Basic级别的许可。对于10.5之前的portal，所有的Named User等效于Level2,可以被用于激活Runime Lite和Basic级别的许可。
