@@ -42,7 +42,7 @@ ArcGIS Runtime Local Server 的 GP Services
 
 ####License key模式激活许可
 
-#####通过ArcGIS Online申请免费许可
+`通过ArcGIS Online申请免费许可:`
 
 1、注册ArcGIS Online试用账号或者Esri开发者账号（中国区暂不支持）  
 
@@ -58,13 +58,16 @@ ArcGIS Runtime Local Server 的 GP Services
   
 ![获取License key](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/ArcGIS Runtime 100 许可策略解读03.png)  
 
-许可格式规则：
+许可格式规则：  
+
 runtimelite,1000,rud****,none***********
 
-#####购买runtime SDK授权包
+`购买runtime SDK授权包:`  
+
 如果是从官方购买ArcGIS Runtime SDK的授权包，将会获得来自官方的授权文件，可以取文件中的授权码直接使用。
 
-#####License key激活许可示范
+`License key激活许可示范:`  
+
 For .NET, Java, Android:
 
 ```
