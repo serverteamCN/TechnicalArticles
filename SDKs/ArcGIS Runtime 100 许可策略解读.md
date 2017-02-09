@@ -36,13 +36,16 @@ ArcGIS Runtime Local Server 的 GP Services
 
 ####License key模式激活许可
 #####通过ArcGIS Online申请免费许可
-1、注册ArcGIS Online试用账号或者Esri开发者账号（中国区暂不支持）
+1、注册ArcGIS Online试用账号或者Esri开发者账号（中国区暂不支持）  
+
 打开浏览器，访问www.arcgis.com网站，点击Try ArcGIS按钮，按照页面向导，注册用户。
 
 ![注册Online账户](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/ArcGIS Runtime 100 许可策略解读02.png)  
 
-2，访问ArcGIS Runtime/Licensing页面，以前一步注册的试用账户登录网站
+2，访问ArcGIS Runtime/Licensing页面，以前一步注册的试用账户登录网站  
+
 打开浏览器，访问https://developers.arcgis.com/arcgis-runtime/licensing/，点击右上角的Sign In登录。  
+
 登录成功后，点击Show my ArcGIS Runtime Lite license key按钮，即可获得免费的Lite级别的许可。
   
 ![获取License key](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/ArcGIS Runtime 100 许可策略解读03.png)  
@@ -74,7 +77,7 @@ catch let error as NSError {
 }
 ```
 
-####Name User模式激活许可
+####Named User模式激活许可
 前面已经讲过，通过Online 或者Portal的Named User也可以授权Runtime 应用,整个过程需要编程实现。详细的授权过程，可以参照以下链接中的示范工程来激活许可：
 
 - [For .NET]()
