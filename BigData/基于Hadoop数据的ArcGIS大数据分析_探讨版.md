@@ -221,6 +221,7 @@
 	    [hadoop@master ~]$ hdfs dfsadmin -report
 	    
  ![Hadoop集群创建成功](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E9%9B%86%E7%BE%A4%E6%88%90%E5%8A%9F%E5%88%9B%E5%BB%BA%E9%AA%8C%E8%AF%81.png)
+ 
  Live datanodes (1) 说明集群成功建立
  
 ##2 Hadoop数据集准备
@@ -239,16 +240,26 @@
 ##3 基于Hadoop数据的分析
 
  1. 登录 **ArcGIS for Server Manager**，点击 **Site**  ->  **Data Stores**。
+ 
  ![ArcGIS for Server Manager的Data Store页面](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%900.png)
+ 
  2. 在Data Stores设置页面上，点击 **Register** 旁边的 **Big Data File Share**，设置 **Type** 为 **HDFS**，输入 **Name** 和 **Path**，点击 **Create**。
+ 
  ![配置HDFS大数据文件共享](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%901.png)
+ 
  3. 点击 **编辑** 图标，在打开的 **Big Data File Share** 界面上选择待分析的数据集，点击 **保存**。
+ 
  ![选择数据集并保存](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%902.png)
+ 
  4. 登录Portal for ArcGIS，进入 **Map** 页，点击 **Analysis**  ->  **GeoAnalytics Tools**  ->  **Summarize Data**  ->  **Aggregate Points**，浏览至注册的数据集，点击 **ADD LAYER**。
+ 
 ![浏览至数据集](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%903.png)
  
  5. 输入所需参数，点击 **RUN ANALYSIS** 开始分析。
+ 
  ![输入分析所需参数](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%903.png)
+ 
  6. 得到分析结果。
+ 
  ![分析结果](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%904.png)
 
