@@ -254,12 +254,14 @@
  4. 登录Portal for ArcGIS，进入 **Map** 页，点击 **Analysis**  ->  **GeoAnalytics Tools**  ->  **Summarize Data**  ->  **Aggregate Points**，浏览至注册的数据集，点击 **ADD LAYER**。
  
 ![浏览至数据集](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%903.png)
- 
+
  5. 输入所需参数，点击 **RUN ANALYSIS** 开始分析。
- 
+
  ![输入分析所需参数](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%903.png)
- 
+
  6. 得到分析结果。
+
+ ![分析结果](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%904.png) 
+
  
- ![分析结果](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/%E5%9F%BA%E4%BA%8EHadoop%E7%9A%84ArcGIS%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%904.png)
 
