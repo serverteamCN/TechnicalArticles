@@ -1,5 +1,4 @@
-#基于Hadoop的ArcGIS大数据分析
-
+#基于Hadoop的ArcGIS大数据分析初步探讨
 **目录**
 	
 		1 Hadoop的安装和集群配置
