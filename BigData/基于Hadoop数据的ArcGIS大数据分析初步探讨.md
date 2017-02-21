@@ -11,7 +11,7 @@
 			1.3 Hadoop的安装和配置
 			1.4 Hadoop的启动和验证
 				1.4.1 Hadoop的启动
-			1.4.2 Hadoop的验证
+				1.4.2 Hadoop的验证
 		2 Hadoop数据集准备
 			2.1 创建件目录
 			2.2 上传数据
