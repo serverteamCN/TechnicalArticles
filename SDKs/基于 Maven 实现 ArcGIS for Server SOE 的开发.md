@@ -94,10 +94,10 @@
 	[INFO] Final Memory: 14M/216M
 	[INFO] ------------------------------------------------------------------------
 
-### 2.2 编辑SOE项目
+### 2.3 编辑SOE项目
 参照Sample中的[Simple REST SOE](http://desktop.arcgis.com/en/arcobjects/latest/java/#ed8936e3-55d1-460b-acd4-ef603a0932f8.htm)编辑App.java文件，构建您的第一个SOE应用。
 
-### 2.3 编译SOE项目
+### 2.4 编译SOE项目
 1 编辑pom.xml文件，添加项目所依赖的第三库jar包。
 
     <dependency>
@@ -123,7 +123,7 @@
 	[INFO] Final Memory: 19M/243M
 	[INFO] ------------------------------------------------------------------------
 
-### 2.3 打包SOE项目
+### 2.5 打包SOE项目
 
     E:\mvn-reprojects\simplerestsoe>mvn package
 出现如下信息，说明项目打包成功。
