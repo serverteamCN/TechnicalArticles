@@ -26,7 +26,9 @@
 #### 1.2.2 配置Maven
 在windows系统环境变量下新建**MAVEN_HOME**变量，设置为**2.1**中的Maven路径，如E:\apache-maven-3.3.9；
 编辑**Path**变量，添加MAVEN_HOME\bin。
+
 ![Windows上maven配置](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Windows%E4%B8%8AMaven%E9%85%8D%E7%BD%AE.png)
+
 #### 1.2.3 验证Maven
 打开windows命令窗口，运行mvn -v，如果出现如下信息，则说明Maven安装成功。
 
@@ -69,8 +71,7 @@
 将ArcGIS Objects核心包即arcobjects.jar安装到Maven本地存储库，方便后面的开发过程引用。
 
     E:\>mvn install:install-file -DgroupId=com.esri.sdk.ao -DartifactId=arcobjects -Dversion=10.5 -Dpackaging=jar -Dfile=E:\arcobjects.jar
-出现如下信息，说明安装成功
-
+出现如下信息，说明安装成功。
 	[INFO] Installing E:\arcobjects.jar to E:\local-repo-for-maven\com\esri\sdk\ao\arcobjects\10.5\arcobjects-10.5.jar
 	[INFO] Installing C:\Users\ADMINI~1\AppData\Local\Temp\mvninstall7772689279552139840.pom to E:\local-repo-for-maven\com\esri\sdk\ao\arcobjects\10.5\arcobjects-10.5.pom
 	[INFO] ------------------------------------------------------------------------
@@ -140,7 +141,12 @@
 ## 3 调用soepackager打包SOE项目
 ### 3.1 修改 soepackager.bat
 根据测试，soepackager.bat文件中的JAVA_HOME、soe_jar_file、output_folder和jdkpath三个变量存在问题，将导致soepackager运行失败。
-请参照如下设置进行修改
+请参照如下设置进行修改:
+1) set JAVA_HOME=%JAVA_HOME:?% 改为 set JAVA_HOME=%JAVA_HOME% 
+2) set soe_jar_file=%soe_jar_file:?% 改为 set soe_jar_file=%soe_jar_file%
+3）set output_folder=%output_folder:?% 改为 set output_folder=%output_folder%
+4) set jdkpath=%jdkpath:?% 改为 jdkpath=%jdkpath%
+
 ###3.2 运行soepackager.bat
 
     C:\Program Files (x86)\ArcGIS\DeveloperKit10.5\java\tools\soepackager>soepackager.bat -p E:\mvn-reprojects\simplerestsoe\target\simplerestsoe-1.0.jar -o E:\mvn-reprojects\simplerestsoe -j C:\java\jdk
