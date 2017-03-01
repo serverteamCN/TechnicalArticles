@@ -91,10 +91,10 @@ catch let error as NSError {
 ####Named User模式激活许可
 前面已经讲过，通过Online 或者Portal的Named User也可以授权Runtime 应用,整个过程需要编程实现。详细的授权过程，可以参照以下链接中的示范工程来激活许可：
 
-- [For .NET]()
+- [For .NET](https://github.com/crazyxhz/License.NetAppByNamedUser.git)
 - [For Java]()
 - [For Andoid]()
-- [For iOS]()
+- [For iOS](https://github.com/makeling/LicenseIOSAppByNamedUser.git)
 
 
 
