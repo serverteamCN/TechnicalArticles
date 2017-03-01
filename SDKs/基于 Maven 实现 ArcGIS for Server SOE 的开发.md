@@ -145,10 +145,15 @@
 ### 3.1 修改 soepackager.bat
 根据测试，soepackager.bat文件中的JAVA_HOME、soe_jar_file、output_folder和jdkpath三个变量存在问题，将导致soepackager运行失败。
 请参照如下设置进行修改：
+
 1）set JAVA_HOME=%JAVA_HOME:?% 改为 set JAVA_HOME=%JAVA_HOME% 
+
 2）set soe_jar_file=%soe_jar_file:?% 改为 set soe_jar_file=%soe_jar_file% 
+
 3）set output_folder=%output_folder:?% 改为 set output_folder=%output_folder% 
+
 4）set jdkpath=%jdkpath:?% 改为 jdkpath=%jdkpath%
+
 ###3.2 运行soepackager.bat
 
     C:\Program Files (x86)\ArcGIS\DeveloperKit10.5\java\tools\soepackager>soepackager.bat -p E:\mvn-reprojects\simplerestsoe\target\simplerestsoe-1.0.jar -o E:\mvn-reprojects\simplerestsoe -j C:\java\jdk
