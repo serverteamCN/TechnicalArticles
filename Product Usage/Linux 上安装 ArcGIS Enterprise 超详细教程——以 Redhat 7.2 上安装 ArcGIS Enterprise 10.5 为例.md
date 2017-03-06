@@ -22,9 +22,10 @@
 
 > **注意：**
 
-> 单机环境下部署ArcGIS Enterprise时，可考虑仅开启 (1)80和443，确保外部客户端可通过web adaptor访问到Portal for ArcGIS或ArcGIS for Server服务页面；(2)当Web Adaptor层未启用ArcGIS for Server的管理功能时，则需开启6080和6443端口，确保外部客户端上的ArcMap向此环境下的ArcGIS for Server发布服务。关于ArcGIS Enterprise更多的端口信息，请参考下面的链接： 
+> 单机环境下部署ArcGIS Enterprise时，可考虑仅开启 (1)80和443，确保外部客户端可通过web adaptor访问到Portal for ArcGIS或ArcGIS for Server服务页面；(2)当Web Adaptor层未启用ArcGIS for Server的管理功能时，则需开启6080和6443端口，确保外部客户端上的ArcMap向此环境下的ArcGIS for Server发布服务。关于ArcGIS Enterprise更多的端口信息，请参考下面的链接。
+
 > 1. ArcGIS Server所用端口号： http://server.arcgis.com/en/server/latest/install/windows/ports-used-by-arcgis-server.htm
->  2. Portal for ArcGIS所用端口号：http://server.arcgis.com/en/portal/latest/administer/windows/ports-used-by-portal-for-arcgis.htm
+> 2. Portal for ArcGIS所用端口号：http://server.arcgis.com/en/portal/latest/administer/windows/ports-used-by-portal-for-arcgis.htm
 > 3. ArcGIS Data Store所用端口号：http://server.arcgis.com/en/portal/latest/administer/windows/ports-used-by-arcgis-data-store.htm
 
 
