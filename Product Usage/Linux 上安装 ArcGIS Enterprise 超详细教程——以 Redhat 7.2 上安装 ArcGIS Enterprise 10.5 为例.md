@@ -414,7 +414,7 @@ ArcGIS Enterprise的安装要求计算机名是完全限定域名的形式。这
 
 ![对 ArcGIS for Server 配置 Web Adaptor 成功](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Linux%E5%AE%89%E8%A3%85ArcGIS%20Enterprise%2015.PNG)
 
-## 6 将Server托管到Portal
+## 6 实现 Portal 和 Server 的托管
 1 登录 Portal for ArcGIS。
  
 ![登录Portal for ArcGIS](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Linux%E5%AE%89%E8%A3%85ArcGIS%20Enterprise%2014.PNG)
