@@ -467,6 +467,7 @@ ArcGIS Enterprise的安装要求计算机名是完全限定域名的形式。这
 
 ### 7.3 在客户端机器上安装证书
 将证书安装到计算机的受信任的根证书颁发机构。
+
 1 在浏览器中打开 Portal for ArcGIS，如https://agsenterprise.esrichina.com/arcgis/home/。
 
 2 点击 **Internet 选项** -> **安全**，选中 **受信任的站点**，点击 **站点**，将 https://agsenterprise.esrichina.com  **添加** 到 **受信任的站点** 列表。
