@@ -1,6 +1,58 @@
 
 # Linux上安装ArcGIS Enterprise超详细教程——以Redhat7.2上安装ArcGIS Enterprise 10.5为例
-===================
+=================== 
+
+    1 准备
+    	1.1 防火墙的关闭（可选）
+    	1.2 用户和组的创建
+    	1.3 IP和机器名
+    		1.3.1 编辑/etc/hostname
+    		1.3.2 编辑/etc/hosts
+    		1.3.3 主机名检测
+    	1.4 准备安装包
+    		1.4.1 拷贝安装包至/home/arcgis下
+    		1.4.2 解压
+    		1.4.3 修改权限
+    2 安装和配置 ArcGIS for Server
+    	2.1 安装前准备
+    		2.1.1 编辑 limits.conf文件
+    		2.1.2 诊断当前环境是否满足Server安装要求
+    	2.2 安装 ArcGIS for Server
+    	2.3 配置 ArcGIS for Server
+    3 安装和配置 ArcGIS DataStore
+    	3.1 安装前准备
+    3.1.1 设置 vm.swappiness
+    3.1.2 诊断当前环境是否满足 Data Store 安装要求
+    	3.2 安装 ArcGIS DataStore
+    	3.3 配置 ArcGIS Data Store
+    4 安装和配置 Portal for ArcGIS
+    	4.1 安装前准备
+    		4.1.1 安装包文件
+    		4.1.2 诊断当前环境是否满足 Portal for ArcGIS 安装要求
+    	4.2 安装 Portal for ArcGIS
+    	4.3 配置 Portal for ArcGIS
+    5 安装和配置 Web Adaptor
+    	5.1 安装前准备
+    		5.1.1 安装 JDK
+    			5.1.1.1 解压JDK
+    			5.1.1.2 配置JDK环境变量
+    		5.1.2 安装tomcat
+    			5.1.2.1 解压tomcat
+    			5.1.2.2 创建自签名证书
+    			5.1.2.3 对tomcat启用ssl
+    			5.1.2.4 启动和验证tomcat
+    	5.2 安装和部署Web Adaptor
+    		5.2.1 安装 Web Adaptor
+    		5.2.2 部署Web Adaptor到tomcat下
+    	5.3 配置 Web Adaptor
+    		5.3.1 对Portal for ArcGIS配置名为arcgis的Web Adaptor
+    		5.3.2 对ArcGIS for Server配置名为server的Web Adaptor
+    6 将Server托管到Portal
+    7 补充
+    	7.1 对 ArcGIS for Server更新证书
+    	7.2 对 Portal for ArcGIS更新证书
+    	7.3 在客户端机器上安装证书
+
 
 
 本文以Redhat7.2上安装ArcGIS Enterprise 10.5为例详细阐述了单机环境下ArcGIS Enterprise的完整安装。
@@ -61,7 +113,7 @@ ArcGIS Enterprise的安装要求计算机名是完全限定域名的形式。这
 > **注意：**
 > 多网卡的环境下，建议删除localhost所在行。
 
-#### 1.3.2 主机名检测
+#### 1.3.3 主机名检测
 运行 hostname 和 hostname -f 进行主机名规范的检测。
 
     [root@agsenterprise home]# hostname
@@ -123,7 +175,7 @@ ArcGIS Enterprise的安装要求计算机名是完全限定域名的形式。这
 	PRESS <ENTER> TO EXIT THE INSTALLER:
 
 ### 2.3 配置 ArcGIS for Server
-在浏览器中输入步骤**2.2**中显示的ArcGIS Server Manager地址，自动跳转至ArcGIS for Server的6443端口，开始进行站点配置。
+在浏览器中输入步骤**2.2**中返回的ArcGIS Server Manager地址，自动跳转至ArcGIS for Server的6443端口，开始进行站点配置。
 
 1 点击**创建新站点**。
 
@@ -143,8 +195,8 @@ ArcGIS Enterprise的安装要求计算机名是完全限定域名的形式。这
 
 ## 3 安装和配置 ArcGIS DataStore
 ### 3.1 安装前准备
-#### 3.1.1 设置 vm.swappiness 
-设置vm.swappiness的值为1，以满足时空大数据分析的需要。
+#### 3.1.1 设置 vm.swappiness 和 vm.max_map_count
+设置vm.swappiness和vm.max_map_count的值，以满足时空大数据分析的需要。
 
     [root@agsenterprise arcgis]# echo 'vm.max_map_count = 262144' >> /etc/sysctl.conf
     [root@agsenterprise arcgis]# echo 'vm.swappiness = 1' >> /etc/sysctl.conf
@@ -175,7 +227,7 @@ ArcGIS Enterprise的安装要求计算机名是完全限定域名的形式。这
 	You will be able to configure ArcGIS Data Store 10.5 by navigating to https://localhost:2443/arcgis/datastore.
 
 ### 3.3 配置 ArcGIS Data Store
-在浏览器中输入ArcGIS Data Store的访问地址 https://agsenterprise.esrichina.com:2443/arcgis/datastore/，开始进行ArcGIS DataStore的配置。
+在浏览器中输入ArcGIS Data Store的访问地址 https://agsenterprise.esrichina.com:2443/arcgis/datastore/ ,开始进行 ArcGIS Data Store的配置。
 
 1 输入步骤**2**中的 ArcGIS Server 的地址以及步骤**2.3**中设置的ArcGIS for Server主站点管理员账户的用户名和密码 ，点击**下一步**。
 
@@ -224,7 +276,7 @@ ArcGIS Enterprise的安装要求计算机名是完全限定域名的形式。这
 	https://localhost:7443/arcgis/home.
 
 ### 4.3 配置 Portal for ArcGIS
-在浏览器中输入Portal for ArcGIS的访问地址 https://agsenterprise.esrichina.com:7443/arcgis/home/，开始进行Portal for ArcGIS的配置。
+在浏览器中输入Portal for ArcGIS的访问地址 https://agsenterprise.esrichina.com:7443/arcgis/home/ ，开始进行Portal for ArcGIS的配置。
 
 1 点击**CREATE NEW PORTAL**
 
@@ -399,7 +451,7 @@ ArcGIS Enterprise的安装要求计算机名是完全限定域名的形式。这
 如上，完成了对 ArcGIS for Server 的证书更新。
 
 ### 7.2 对 Portal  for ArcGIS更新证书
-1 访问 Portal for ArcGIS 的admin页面，即 https://agsenterprise.esrichina.com/arcgis/portaladmin/，输入用户名和密码登录。
+1 访问 Portal for ArcGIS 的admin页面，即 https://agsenterprise.esrichina.com/arcgis/portaladmin/ ，输入用户名和密码登录。
 
 2 导航至 **security** -> **sslCertificates**，点击**importExistingServerCertificate**。输入agsenterprise.pfx的路径和密码，设置证书别名，点击 **import**。
 
@@ -417,7 +469,7 @@ ArcGIS Enterprise的安装要求计算机名是完全限定域名的形式。这
 将证书安装到计算机的受信任的根证书颁发机构。
 1 在浏览器中打开 Portal for ArcGIS，如https://agsenterprise.esrichina.com/arcgis/home/。
 
-2 点击 **Internet 选项** -> **安全**，选中 **受信任的站点**，点击 **站点**，将 https://agsenterprise.esrichina.com **添加**到受信任的站点**列表。
+2 点击 **Internet 选项** -> **安全**，选中 **受信任的站点**，点击 **站点**，将 https://agsenterprise.esrichina.com  **添加** 到 **受信任的站点** 列表。
 
 ![将站点加入受信任站点](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Linux%E5%AE%89%E8%A3%85ArcGIS%20Enterprise%2023.PNG)
 
