@@ -21,8 +21,8 @@
     	2.3 配置 ArcGIS for Server
     3 安装和配置 ArcGIS DataStore
     	3.1 安装前准备
-    3.1.1 设置 vm.swappiness
-    3.1.2 诊断当前环境是否满足 Data Store 安装要求
+    		3.1.1 设置 vm.swappiness
+    		3.1.2 诊断当前环境是否满足 Data Store 安装要求
     	3.2 安装 ArcGIS DataStore
     	3.3 配置 ArcGIS Data Store
     4 安装和配置 Portal for ArcGIS
