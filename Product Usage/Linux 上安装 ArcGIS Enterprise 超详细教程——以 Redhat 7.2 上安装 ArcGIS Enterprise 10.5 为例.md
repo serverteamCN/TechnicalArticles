@@ -47,7 +47,7 @@
     	5.3 配置 Web Adaptor
     		5.3.1 对Portal for ArcGIS配置名为arcgis的Web Adaptor
     		5.3.2 对ArcGIS for Server配置名为server的Web Adaptor
-    6 实现 Portal 和 Server 的托管
+    6 实现 Portal 和 Server 的托管
     7 补充
     	7.1 对 ArcGIS for Server更新证书
     	7.2 对 Portal for ArcGIS更新证书
