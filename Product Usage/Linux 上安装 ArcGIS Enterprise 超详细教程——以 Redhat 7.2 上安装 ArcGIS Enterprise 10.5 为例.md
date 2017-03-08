@@ -1,6 +1,7 @@
 
 # Linux上安装ArcGIS Enterprise超详细教程——以Redhat7.2上安装ArcGIS Enterprise 10.5为例
-=================== 
+===================
+
 
     1 准备
     	1.1 防火墙的关闭（可选）
