@@ -4,6 +4,8 @@
 
 ![错误截图](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/修复iOS Xcode 8 Error 02.png)
 
+
+
 ###修复办法：
 
 1. 在Xcode 菜单中，选择Product > Scheme > Edit Scheme
