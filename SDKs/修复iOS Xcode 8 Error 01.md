@@ -1,4 +1,4 @@
-#修复iOS Xcode 8 Error : Protocol not available, dumping backtrace[duplicate]
+# 修复iOS Xcode 8 Error : Protocol not available, dumping backtrace[duplicate]
 
 在基于Xcode8.2新建工程时，可能会碰到如下错误：
 
@@ -6,7 +6,7 @@
 
 
 
-###修复办法：
+### 修复办法：
 
 1. 在Xcode 菜单中，选择Product > Scheme > Edit Scheme
 
