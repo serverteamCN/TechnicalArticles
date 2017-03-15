@@ -12,7 +12,7 @@
 
 2. 添加环境变量：OS_ACTIVITY_MODE 值为 disable
 
-![示例截图](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/修复iOS_Xcode_8Error_01.png)  
+![示例截图](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/修复iOS_Xcode_8_Error_01.png)  
 
 
 3. 点击Close按钮，关闭窗口后，重新运行工程，你会发现错误解除。
