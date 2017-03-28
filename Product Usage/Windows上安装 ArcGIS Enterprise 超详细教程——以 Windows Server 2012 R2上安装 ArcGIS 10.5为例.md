@@ -76,7 +76,7 @@ ArcGIS for Enterprise的部署要求计算机名是完全限定域名的形式�
 
 ![点击创建自签名证书](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Windows%E4%B8%8A%E5%AE%89%E8%A3%85ArcGIS%20Enterprise%2005.png)
 
-5）在**指定友好名称**面板上任意指定一个具有标识性的名称如server128,并点击**确定**
+5）在**指定友好名称**面板上任意指定一个具有标识性的名称如server128，并点击**确定**
 
 ![指定自签名证书的名字](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Windows%E4%B8%8A%E5%AE%89%E8%A3%85ArcGIS%20Enterprise%2006.png)
 
@@ -152,7 +152,7 @@ ArcGIS Enterprise的部署需要安装 ArcGIS for Server、ArcGIS Data Store、P
 
 这是一个应用程序级别的账户，而不是操作系统级别的账户，您可根据需要自行创建。
 
-4）在**指定根服务器目录和配置存储**界面上为ArcGIS for Server的config-store和directories指定存储位置
+4）在**指定根服务器目录和配置存储**界面上指定ArcGIS for Server的config-store和directories的存储位置
 
 5）点击**完成**直至站点创建完毕
 
@@ -200,7 +200,7 @@ ArcGIS Enterprise的部署需要安装 ArcGIS for Server、ArcGIS Data Store、P
 
 ![指定配置的 Data Store 的类型](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Windows%E4%B8%8A%E5%AE%89%E8%A3%85ArcGIS%20Enterprise%2023.png)
 
-5）确认配置信息无误，点击**完成**直至Data Store配置完毕。
+5）确认配置信息无误，点击**完成**至Data Store配置完毕。
 
 ![确认 Data Store 配置信息](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Windows%E4%B8%8A%E5%AE%89%E8%A3%85ArcGIS%20Enterprise%2024.png)
 
@@ -226,7 +226,7 @@ ArcGIS Enterprise的部署需要安装 ArcGIS for Server、ArcGIS Data Store、P
 
 6）点击**Finish**通过**Software Authorization Wizard**完成软件的在线或离线授权。也可点击**Software Authorization Wizard**界面上的**取消**稍后进行软件授权
 
-软件授权完毕后，浏览器自动打开Portal for ArcGIS的配置界面。您也可通过在浏览器中输入https://server128.esrichina.com:7443/arcgis/home/createadmin.html打开**Create Or Join a Portal**这一配置页面
+软件授权完毕后，浏览器自动打开Portal for ArcGIS的配置界面。您也可通过在浏览器中输入https://server128.esrichina.com:7443/arcgis/home/ ，打开**Create Or Join a Portal**这一配置页面
 。
 
 ### 4.2 配置 Portal for ArcGIS ###
@@ -286,7 +286,7 @@ ArcGIS Enterprise的部署需要安装 ArcGIS for Server、ArcGIS Data Store、P
 
 1）在自动打开的浏览器中，对**要使用Web Adaptor配置哪种产品**选择**ArcGIS Server**以实现ArcGIS for Server的配置，点击**下一步**
 
-2）输入步骤**3.2**配置的ArcGIS for Server站点URL和主站点管理员的用户名和密码，点击**配置**完成对于ArcGIS for Server的配置
+2）输入步骤**3.2**配置的ArcGIS for Server站点URL和主站点管理员的用户名和密码，点击**配置**完成对ArcGIS for Server的配置
 
 ![输入配置ArcGIS for Server所需填入的信息](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Windows%E4%B8%8A%E5%AE%89%E8%A3%85ArcGIS%20Enterprise%2036.png)
 
