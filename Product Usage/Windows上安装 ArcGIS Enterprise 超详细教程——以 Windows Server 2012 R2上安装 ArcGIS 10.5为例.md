@@ -319,4 +319,4 @@ ArcGIS Enterprise的部署需要安装 ArcGIS for Server、ArcGIS Data Store、P
 ![配置 ArcGIS for Server的托管](https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/Windows%E4%B8%8A%E5%AE%89%E8%A3%85ArcGIS%20Enterprise%2043.png)
 
 
-至此，ArcGIS Enterprise在Windows单机上的安装完毕。
+至此，ArcGIS Enterprise在Windows单机上安装完毕。
