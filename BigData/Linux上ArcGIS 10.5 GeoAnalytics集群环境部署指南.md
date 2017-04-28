@@ -1,4 +1,4 @@
-#Linux上ArcGIS 10.5 GeoAnalytics集群环境部署指南#
+# Linux上ArcGIS 10.5 GeoAnalytics集群环境部署指南 #
 
 Linux操作系统版本：Red Hat Enterprise Linux 6.8 Desktop
 
