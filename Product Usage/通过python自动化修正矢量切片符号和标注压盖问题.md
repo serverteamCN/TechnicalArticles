@@ -21,7 +21,7 @@
 ### 修复过程：  
 
 
-1）通过Pro生成矢量切片包，具体的生成过程参照官方帮助：[创建矢量切片包](http://pro.arcgis.com/en/pro-app/tool-reference/data-management/create-vector-tile-package.htm);
+1）通过Pro2.0生成矢量切片包，具体的生成过程参照官方帮助：[创建矢量切片包](http://pro.arcgis.com/en/pro-app/tool-reference/data-management/create-vector-tile-package.htm);
 
 2）将vptk包拷贝到测试目录，并修改扩展名为zip；
 
@@ -36,7 +36,7 @@
 － 当前切片包中的图层总数；  
 － 返回当前切片包的图层列表；   
 － 根据图层列表返回的值，在控制台中交互输入要修改的图层名（如果要修改多个图层可以简写名称匹配多个图层）；  
-－ 执行修改操作，并返回修改的图层列表； 
+－ 执行修改操作，并返回修改的图层列表。 
 
 检验root.json文件：  
 修改前：  
