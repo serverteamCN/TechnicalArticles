@@ -22,7 +22,8 @@
 
 ![反注册Data Item](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hostingServer和DataStore的注册关系03.png) 
 
-4）验证结果。
+4）验证结果。  
+
 ![验证结果](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hostingServer和DataStore的注册关系04.png)   
 
 
