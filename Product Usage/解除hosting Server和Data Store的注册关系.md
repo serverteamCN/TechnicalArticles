@@ -1,4 +1,4 @@
-# 解除hosting Server和Data Store的注册关系 #
+# 解除Hosting Server和Data Store的注册关系 #
 
 
 在ArcGIS Enterprise的部署中，每一个ArcGIS Data Store安装后都需要注册ArcGIS Server，建立和站点的联系，这个过程中DataStore完成了建库（可能是关系型数据库，可能是切片缓存库，也可能是时空大数据库），Server从普通的ArcGIS Server升级为hosting Server。建立关系的过程很美好，但是总有那么一个理由，需要我们解除关系来恢复各自独立。
