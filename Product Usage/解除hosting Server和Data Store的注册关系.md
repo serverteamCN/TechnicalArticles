@@ -11,19 +11,19 @@
 
 1） 登录Server admin 管理站点；  
 
-![登录Server admin](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hosting Server和Data Store的注册关系01.png)   
+![登录Server admin](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hostingServer和DataStore的注册关系01.png)   
 
 
 2）导航到要解除的data item 信息页，拷贝Item Path；  
   
-![拷贝Item Path](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hosting Server和Data Store的注册关系02.png)  
+![拷贝Item Path](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hostingServer和DataStore的注册关系02.png)  
 
 3)导航到unregisterItem页面，输入Item path, 点击unregister Item按钮发送反注册请求。
 
-![反注册Data Item](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hosting Server和Data Store的注册关系03.png) 
+![反注册Data Item](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hostingServer和DataStore的注册关系03.png) 
 
 4）验证结果。
-![验证结果](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hosting Server和Data Store的注册关系04.png)   
+![验证结果](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hostingServer和DataStore的注册关系04.png)   
 
 
 
@@ -34,7 +34,7 @@
 
 1）检查DataStore中当前已经注册的库：  
 
-![检查注册库](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hosting Server和Data Store的注册关系05.png)    
+![检查注册库](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hostingServer和DataStore的注册关系05.png)    
  
 
 从上图中可以看出当前测试的Data Store中注册了关系型和切片缓存型数据库。  
@@ -42,7 +42,7 @@
 
 2）打开命令行工具，cd到 \<ArcGIS Data Store installation directory\>\datastore\tools目录下,参照下图执行解除操作：  
   
-![命令解除](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hosting Server和Data Store的注册关系06.png)    
+![命令解除](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/解除hostingServer和DataStore的注册关系06.png)    
 
 
 这个工具非常简单，只有一个关键参数--store， 顾名思义就是指定解除哪个库，在这个测试中我解除的是切片缓存库。按照确认提示，输入yes，当看到"Operation completed successfully"，就表示解除成功啦。
