@@ -5,7 +5,7 @@
 通过samba远程更新服务器资源，如果需要使用c$, d$类似这种盘符的共享接口，可能会遇到“拒绝访问”的错误。  
 
 
-![错误截图](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/如何为windows\ 文件共享开启”盘符$”访问权限01.png) 
+![错误截图](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/如何为windows%20文件共享开启”盘符%24”访问权限01.png) 
   
 ￼
 ### [问题分析]  
@@ -19,6 +19,6 @@
 将FilterAdministratorToken的键值设置为0，即可关闭这一安全策略。  
 
 
-![修改截图](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/如何为windows\ 文件共享开启”盘符$”访问权限02.png)   
+![修改截图](https://raw.githubusercontent.com/serverteamCN/TechnicalArticles/master/pictures/如何为windows%20文件共享开启”盘符%24”访问权限02.png)   
 
 ￼
