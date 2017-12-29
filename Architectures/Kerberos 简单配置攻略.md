@@ -1,4 +1,5 @@
-# Kerberos 简单配置攻略
+# Kerberos 简单配置攻略  
+
 ## 一 Kerberos简史  
 Kerberos是一种网络安全认证协议，最早由麻省理工研发，用来保护项目 Athena提供的网络服务器。这个协议以希腊神话中的人物Kerberos（或者Cerberus）命名，他在希腊神话中是Hades的一条凶猛的三头保卫神犬。  
 
