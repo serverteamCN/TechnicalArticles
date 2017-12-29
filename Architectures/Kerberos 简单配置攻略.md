@@ -273,7 +273,7 @@ kadmin:
 
 最后，简单总结几个常用的kerberos命令。
 
-####5 常用kerberos 命令  
+#### 5 常用kerberos 命令  
 
 ##### 1）退出kadmin  
   
