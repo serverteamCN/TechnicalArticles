@@ -113,7 +113,7 @@ default_realm = ESRICHINA.COM
         default_principal_flags = +preauth
     }
 ```
-#####4）修改/var/kerberos/krb5kdc/kadm5.acl 配置
+##### 4）修改/var/kerberos/krb5kdc/kadm5.acl 配置
 ```
 [root@hadoop01 etc]# cat /var/kerberos/krb5kdc/kadm5.acl  
 */admin@ESRICHINA.COM	*
@@ -124,7 +124,7 @@ default_realm = ESRICHINA.COM
 
 至此，服务器端环境基本搭建完成了，接下来开始创建KDC数据库用以保存kerberos 数据
 
-#####5）创建KDC数据库用以保存Kerberos 数据
+##### 5）创建KDC数据库用以保存Kerberos 数据
 ```
 [root@hadoop01 etc]# kdb5_util create -r  
  ESRICHINA.COM -s
@@ -144,7 +144,7 @@ total 32
 -rw------- 1 root root    0 Dec 21 02:27 principal.ok
 -rw------- 1 root root   70 Dec 20 09:30 stash
 ```
-#####6）开始创建管理员和测试用户
+##### 6）开始创建管理员和测试用户
 ```
 [root@hadoop01 etc]# kadmin.local
 kadmin.local:  addprinc root/admin
@@ -153,7 +153,7 @@ kadmin.local:  listprincs
 kadmin.local:  exit
 ```
 
-#####7）启动Kerberos KDC 和kadmin daemons ：
+##### 7）启动Kerberos KDC 和kadmin daemons ：
 正常情况，基于linux 7系统，可以通过以下命令启动服务：  
 
 ```
@@ -182,7 +182,7 @@ OK，服务器端工作已经全部完成，接下来我们开始搭建kerberos�
 [root@hadoop04 etc]# yum -y install krb5-libs krb5-workstation  
 ```
 
-#####2）将之前在hadoop01 kerberos server上配置的/etc/krb5.conf文件拷贝到客户端机器  
+##### 2）将之前在hadoop01 kerberos server上配置的/etc/krb5.conf文件拷贝到客户端机器  
 
 ```
 [root@hadoop02 ssh]# scp root@hadoop01:/etc/krb5.conf /etc/krb5.conf  
@@ -199,10 +199,10 @@ krb5.conf                                     100%  828     1.8MB/s   00:00
 
 这步操作需要你在集群内所有服务器上配置了ssh环境，允许使用scp命令。如果没有，可以通过nfs共享文件也可以。
 
-####4 检测kerberos安全验证
+#### 4 检测kerberos安全验证
 kerberos支持在KDC上使用kadmin.local管理kerberos, 也支持使用kamin在远程客户端机器上管理kerberos。  
 
-1）在使用kadmin 之前，先通过kinit验证是否可以登陆：  
+##### 1）在使用kadmin 之前，先通过kinit验证是否可以登陆：  
 
 ```
 [root@hadoop03 ssh]# kinit makl/admin@ESRICHINA.COM
@@ -211,7 +211,7 @@ Password for makl/admin@ESRICHINA.COM:
 
 这步使用了principal + kerberos 密码的校验方式，如果校验正确，kerberos不会有任何提示，而是直接返回到命令行状态，接下来再输入kadmin命令，输入密码，即可进入kerberos管理状态。
 
-2）进入kadmin  
+##### 2）进入kadmin  
   
 ```
 [root@hadoop03 ssh]# kadmin  
@@ -219,7 +219,7 @@ Authenticating as principal makl/admin@ESRICHINA.COM with password.
 Password for makl/admin@ESRICHINA.COM:   
 ```
 
-3）在kadmin环境中，通过list_principals命令列出当前kerberos server中所有的用户  
+##### 3）在kadmin环境中，通过list_principals命令列出当前kerberos server中所有的用户  
 
 ```
 kadmin:  list_principals  
@@ -229,9 +229,9 @@ kadmin:  list_principals
 上述检测过程是通过客户端输入密码的方式来校验的，对于运行在客户端的程序上述方式显然不够便利，kerberos还提供了免交互式的验证方式，通过keytab来保存密钥，实现自动校验。
 
 
-4）创建key table(密钥表)命令  
+##### 4）创建key table(密钥表)命令  
 
-4.1）这些操作需要管理员权限执行，因此我们首先进入kamin：  
+###### 4.1）这些操作需要管理员权限执行，因此我们首先进入kamin：  
   
 ```
 [root@hadoop01 krb5kdc]# kinit makl/admin@ESRICHINA.COM    
@@ -241,7 +241,7 @@ Authenticating as principal makl/admin@ESRICHINA.COM with password.
 Password for makl/admin@ESRICHINA.COM:   
 ```
 
-4.2）在kadmin下，通过ktadd命令为用户principal创建密钥  
+###### 4.2）在kadmin下，通过ktadd命令为用户principal创建密钥  
   
 ```
 kadmin:  ktadd -k /var/kerberos/krb5kdc/kadm5.keytab makl/admin@ESRICHINA.COM
@@ -250,7 +250,7 @@ Entry for principal makl/admin@ESRICHINA.COM with kvno 3, encryption type des3-c
 Entry for principal makl/admin@ESRICHINA.COM with kvno 3, encryption type des-cbc-crc added to keytab WRFILE:/var/kerberos/krb5kdc/kadm5.keytab.  
 ```
 
-4.3）分发密钥表  
+###### 4.3）分发密钥表  
 
 这个密钥表是服务器端和客户端免密认证的关键，也是服务器端和客户端最重要的秘密，因此创建好后，需要在集群内所有服务器上分发，用来后续的principal校验。  
 
@@ -260,7 +260,7 @@ Entry for principal makl/admin@ESRICHINA.COM with kvno 3, encryption type des-cb
 [root@hadoop03 krb5kdc]# scp root@hadoop01:/var/kerberos/krb5kdc/kadm5.keytab /var/kerberos/krb5kdc/kadm5.keytab
 kadm5.keytab                                  100% 1220     2.1MB/s   00:00  
 ```
-4.4）验证免密登陆：  
+###### 4.4）验证免密登陆：  
   
 ```
 [root@hadoop03 krb5kdc]# kinit -kt /var/kerberos/krb5kdc/kadm5.keytab makl/admin@ESRICHINA.COM
@@ -275,19 +275,19 @@ kadmin:
 
 ####5 常用kerberos 命令  
 
-1）退出kadmin  
+##### 1）退出kadmin  
   
 ```
 kadmin:  exit  
 ```
 
-2）删除当前认证缓存 
+##### 2）删除当前认证缓存 
  
 ```
 [root@hadoop03 krb5kdc]# kdestroy  
 ```
 
-3）列出当前用户  
+##### 3）列出当前用户  
   
 ```  
 [root@hadoop03 ssh]# klist
@@ -299,7 +299,7 @@ Valid starting     Expires            Service principal
 	renew until 12/22/17 02:27:43
 ```
 
-4）删除已有principal  
+##### 4）删除已有principal  
 
 ```
 [root@hadoop01 keytab]# kadmin.local
@@ -310,7 +310,8 @@ Principal "nn/esrichina.com@ESRICHINA.COM" deleted.
 
 这篇文档只是我在配置kerberos过程中一些过程的总结，更详细的信息建议阅读kerberos的在线帮助。  
 
-####6 靠谱的kerberos学习资源
+#### 6 靠谱的kerberos学习资源  
+
 -麻省在线帮助：https://web.mit.edu/kerberos/krb5-latest/doc/  
 -相关论文：https://web.mit.edu/kerberos/papers.html
 
