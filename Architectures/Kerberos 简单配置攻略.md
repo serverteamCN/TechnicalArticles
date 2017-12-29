@@ -89,7 +89,7 @@ includedir /etc/krb5.conf.d/
   esrichina.com = ESRICHINA.COM  
   
 ```
-#####3）修改/var/kerberos/krb5kdc/kdc.conf配置
+##### 3）修改/var/kerberos/krb5kdc/kdc.conf配置
 ```
 
 [root@hadoop01 etc]# cat /var/kerberos/krb5kdc/kdc.conf 
