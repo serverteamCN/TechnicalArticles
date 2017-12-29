@@ -16,8 +16,8 @@ Kerberos作为网络安全问题的解决方案，使用强加密技术，以便
 
 Kerberos是第三方的认证机制，通过它，用户和用户希望访问的服务依赖于Kerberos服务器彼此认证。这种机制也支持加密用户和服务之间的所有通信。Kerberos 服务器作为密钥分发中心，简称KDC。在高级别上，它包含三部分：  
 - 用户和服务的数据库（即principals）以及他们各自的Kerberos 密码  
--认证服务器（AS），执行初始认证并签发授权票据（TGT）  
--Ticket授予服务器（TGS）基于初始的TGT签发后续的服务票据（ST）  
+- 认证服务器（AS），执行初始认证并签发授权票据（TGT）  
+- Ticket授予服务器（TGS）基于初始的TGT签发后续的服务票据（ST）  
 
 关于AS, TGS , user client , Application server , TGT 以及ST的关系，可以参考下图：  
 
