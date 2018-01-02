@@ -166,4 +166,4 @@ https://github.com/serverteamCN/TechnicalArticles/blob/master/BigData/Linux%E4%B
 1. 临时退出该容器，继续启动其他容器，使用如下语句退出但是保持容器运行：Control-P Control-Q。
 
 
-按照上述步骤完成所有的容器创建和站点创建后，即可执行Portal for ArcGIS 与ArcGIS for Server的关联，完成搭建GA环境。
+按照上述步骤完成所有的容器创建和站点创建后，即可执行Portal for ArcGIS 与ArcGIS for Server以及ArcGIS Datastore的关联，完成搭建GA环境。
