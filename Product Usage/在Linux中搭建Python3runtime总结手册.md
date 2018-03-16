@@ -102,7 +102,7 @@ Anaconda可以实现简化管理丰富的Python包，Esri 也选择了Anaconda�
 
 	Linux上执行的Python脚本中调用arcpy，执行Python脚本报错：
 
-	![](https://i.imgur.com/8fGsw8F.png)
+	   																https://github.com/serverteamCN/TechnicalArticles/blob/master/pictures/linux%E8%B0%83%E7%94%A8arcpy%E6%8A%A5%E9%94%99%E6%88%AA%E5%9B%BE.png
  
 	解决办法：
 
