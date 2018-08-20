@@ -176,4 +176,5 @@ ArcGIS Geoanalytics Server 10.6.1
 
 http://enterprise.arcgis.com/en/portal/latest/use/what-is-a-big-data-file-share.htm
 
-
+来源：
+http://www.gougexueli.com/2018/08/20/arcgis-%E7%9F%A2%E9%87%8F%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%B8%85%E5%8D%95%E4%BB%8B%E7%BB%8D%E5%B8%96/
